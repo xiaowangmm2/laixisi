@@ -1,0 +1,167 @@
+@import '~common/common.less';
+
+
+
+
+/*更多案例*/
+
+.case-more-box {
+    .case-more-title {
+        color: #2b2b2b;
+        font-size: 16px;
+        padding: 12px 0 12px 10px;
+        border-bottom: 1px solid #eaeaea;
+    }
+}
+
+.menu-list-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 22px;
+    cursor: pointer;
+    .menu-box {
+        width: 1200px;
+        height: 200px;
+        overflow: hidden;
+        position: relative;
+        margin: 0 auto;
+        .menu-list {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            &>li {
+                float: left;
+                width: 220px;
+                padding: 0 10px;
+                height: 200px;
+                a {
+                    display: block;
+                    &:hover {
+                        box-shadow: 0 2px 2px 0 rgba(83, 78, 78, .5);
+                        -webkit-box-shadow: 0 2px 2px 0 rgba(83, 78, 78, .5)
+                    }
+                    .menu-img {
+                        display: inline-block;
+                        width: 220px;
+                        height: 200px;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+/*新闻资讯*/
+
+.news-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 34px;
+    .index-common-title();
+    .news-bg {
+        box-sizing: border-box;
+        width: 1200px;
+        height: 194px;
+        background: url(../../images/news-bg.png) no-repeat;
+        padding-top: 68px;
+        margin-top: 34px;
+        .news-text {
+            width: 800px;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 18px;
+            color: rgb(255, 255, 255);
+            line-height: 28px;
+        }
+    }
+    .news-list {
+        margin-top: 32px;
+        .clearfix;
+        li {
+            float: left;
+            width: 380px;
+            margin-right: 28px;
+            height: 192px;
+            &:nth-last-child(1) {
+                margin-right: 0;
+            }
+            a {
+                display: block;
+                &:hover {
+                    .news-item-title {
+                        color: #f13a3a;
+                    }
+                }
+                .new-item-date {
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #4a4a4a;
+                    font-weight: bold;
+                }
+                .news-item-year {
+                    font-size: 15px;
+                    line-height: 15px;
+                    color: #767676;
+                }
+                .news-item-title {
+                    font-size: 14px;
+                    color: #666;
+                    margin: 16px 0 14px 0;
+                }
+                .news-item-info {
+                    margin-top: 4px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #808080;
+                    margin-bottom: 6px;
+                    .over-more-line(4);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/*关于我们*/
+
+.about-us-wrap {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 34px;
+    .index-common-title();
+    .about-content {
+        margin-top: 26px;
+        .clearfix;
+        .about-left {
+            float: left;
+            width: 484px;
+            height: 326px;
+            background: url(../../images/index-about-bg.png);
+        }
+        .about-right {
+            float: right;
+            width: 690px;
+            height: 326px;
+            background: #e7e7e7;
+            box-sizing: border-box;
+            padding: 60px 66px 60px 66px;
+            div {
+                margin-bottom: 16px;
+                text-indent: 2em;
+                line-height: 22px;
+            }
+        }
+    }
+}

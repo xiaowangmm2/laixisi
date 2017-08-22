@@ -1,0 +1,106 @@
+@import '~common/common.less';
+.banner-bg {
+    height: 300px;
+    background: url(../../images/us-banner.jpg) no-repeat;
+}
+
+.pic-list {
+    width: 1200px;
+    margin: 0 auto;
+    .clearfix;
+    margin-top: 20px;
+    li {
+        width: 300px;
+        height: 190px;
+        float: left;
+        span {
+            display: block;
+            width: 290px;
+            height: 190px;
+            margin: 0 auto;
+        }
+        .pic1 {
+            background: url(../../images/us-list1.png) no-repeat;
+        }
+        .pic2 {
+            background: url(../../images/us-list2.png) no-repeat;
+        }
+        .pic3 {
+            background: url(../../images/us-list3.png) no-repeat;
+        }
+        .pic4 {
+            background: url(../../images/us-list4.png) no-repeat;
+        }
+    }
+}
+
+.company-info {
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-indent: 2em;
+    line-height: 20px;
+}
+.company-main{
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+    padding-left: 4px;
+    h2{
+        font-size: 18px;
+        color: #333;
+        margin: 6px 0;
+    }
+    div{
+        text-indent: 2em;
+    }
+}
+
+.about-common {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    .index-common-title();
+    .case-title {
+        padding-left: 6px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #DEDEDE;
+    }
+}
+
+.zizhi-list {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    .clearfix;
+    a {
+        float: left;
+        width: 280px;
+        height: 210px;
+        margin-right: 26px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &:nth-last-child(1) {
+                 margin-right: 0;
+             }
+        &:hover {
+            box-shadow: 0 2px 2px 0 rgba(83, 78, 78, .5);
+            -webkit-box-shadow: 0 2px 2px 0 rgba(83, 78, 78, .5)
+        }
+    }
+}
+.wenhua-list{
+    padding-left: 10px;
+    li{
+        padding: 10px 0;
+        color: #999;
+        font-size: 14px;
+        span{
+            color: #333;
+            font-weight: bold;
+        }
+    }
+}

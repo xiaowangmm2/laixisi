@@ -1,0 +1,132 @@
+
+.clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.inputgoods {
+    color: #252525;
+    padding: 16px 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.select_value,
+.commonly_list,
+.city_ul,
+.county_ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.close-btn{
+    width:48px;
+    height:48px;
+    display:block;
+    position: absolute;
+    top:0;
+    right:0;
+    line-height:48px;
+}
+.close-btn img{
+	/*vertical-align:middle;*/
+}
+/*地址插件样式*/
+.cl_address_plug{width: 200px;height:40px;}
+.address_plug_contain{  border:1px solid #727272;  border-radius:4px;  width:448px;  position: absolute;display: none;z-index:9999;background: #fff;}
+.input_value{position: absolute;display: none;border:1px solid #d6d6d6;background: #fff;z-index:9998;}
+.input_value li{width:100%;padding:2px 5px;box-sizing: border-box;}
+.input_value li.cur{background: #5DA3EC;color:#fff;}
+.address_plug_list{display: table;width:100%;border-bottom: none;box-sizing: border-box;position: relative;height:40px;}
+.star{color:#f00}
+.address_plug_list_icon{
+    cursor: default;
+    display: inline-block;
+    width: 66px;
+    height: 26px;
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 26px;
+    border-collapse: collapse;
+    padding: 0;
+    font-size: 18px;
+    color: #3f3f3f;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.address_plug_list_icon:nth-child(1){margin-left:0px;}
+.address_plug_list_icon.hover{background: #727272;color:#fff;cursor: pointer;}
+.address_plug_list_icon.hover i{color:#fff;}
+.list_icon1{}
+.list_icon2{top: 10px;left:95px;}
+.list_icon3{top: 10px;left:183px;}
+.address_plug_list_icon span{
+    float: right;margin:0px;padding:0px;width:1px;}
+@-webkit-keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+.address_plug_close img:hover{
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+}
+
+
+.address_select{width: 430px;margin:0 8px 0 8px;border-top:1px solid #5ba3e0;padding:0 0 5px 0;background: #fff;}
+
+.Commonly_address{width: 300px;padding-bottom:15px;margin:0 auto;font-size:12px;color:#999;position: relative;}
+.commonly_list{float:left;margin:22px 0 0 0;color:#3f3f3f;}
+.commonly_list li { float:left;overflow:hidden; word-break:keep-all;  white-space:nowrap;  text-overflow:ellipsis;  width:100px;  height:22px;font-size:15px;border-radius: 4px;cursor: pointer;text-align: center;line-height:20px;}
+.commonly_list li:hover{color:#fff;background: #727272; }
+.middle-line{height: 1px;border-top: 1px solid #d0cfcf;position: absolute;bottom: 4px;left:28px;width:230px;text-align: left;}
+.middle-line span{width: 98px;display:block;position: relative;text-align: center;top: -8px;background: #fff;left:32%;}
+.provinces{margin:10px 0 0 0;}
+.provinces_dl{margin:0px;padding:0px;font-size:15px;display: block;clear:left;}
+.provinces_dl dt{color:#FD8C1F;float: left;width: 50px;text-align: center;height:30px;}
+.provinces_dl dd{color:#6f6f6f;float: left;padding:0 5px;cursor: pointer;margin:0 0 10px 0 ;}
+.provinces_dl dd:hover,.provinces_dl dd.hover{color:#fff;background: #727272;border-radius: 4px;}
+.city_ul,.county_ul{width:400px;margin:5px auto;padding:0px;font-size:15px;}
+.city_ul li,.county_ul li{color:#6f6f6f;float: left;white-space:nowrap;padding:0 6px;cursor: pointer;margin:5px 0px ;border-radius: 4px;}
+.city_ul li:hover,.county_ul li:hover{color:#fff;background: #727272;}
+.city_ul li.hover,.county_ul li.hover{color:#fff;background: #727272;}
+.tab_div{display: none}
+.address_plug_list_icon.hoverX{background: #FD8C1F;color:#fff;cursor: pointer;}
+.address_plug_list_icon.hoverX i{color:#fff;}

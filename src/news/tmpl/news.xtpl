@@ -1,0 +1,11 @@
+{{#each(newsArr)}}
+<li>
+    <a href="javascript:void(0)">
+        <span class="left-item"><img src="{{img}}"></span>
+        <div class="right-item">
+            <div class="head-title"><h2>{{title}}</h2><span class="head-date">{{date}}</span></div>
+            <p class="item-content">{{content}}</p>
+        </div>
+    </a>
+</li>
+{{/each}}

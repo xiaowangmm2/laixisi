@@ -1,0 +1,5 @@
+{{#each(bannerArr)}}
+<div class="swiper-slide">
+  <img src="{{img}}"  alt="杭州莱希斯">
+</div>
+{{/each}}

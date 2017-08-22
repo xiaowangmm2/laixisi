@@ -1,0 +1,56 @@
+@import '~common/common.less';
+
+
+
+
+/*新闻列表*/
+
+.news-list {
+    width: 1200px;
+    margin: 0 auto;
+    li{
+    	padding: 20px 0;
+    	background: url(../../images/line-bottom.png) repeat-x left bottom;
+    	&:nth-last-child(1){
+    		background: none;
+    	}
+    }
+    a {
+        display: block;
+        .clearfix;
+    }
+    .left-item {
+        float: left;
+        width: 150px;
+        height: 110px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .right-item {
+        width: 1030px;
+        float: right;
+        .head-title {
+            height: 30px;
+            line-height: 30px;
+            h2 {
+                display: inline-block;
+                width: 600px;
+                font-size: 14px;
+                color: #666;
+            }
+            .head-date {
+                font-size: 14px;
+                color: #666;
+                float: right;
+            }
+        }
+        .item-content {
+            color: #797979;
+            line-height: 18px;
+            font-size: 12px;
+            .over-more-line(2);
+        }
+    }
+}

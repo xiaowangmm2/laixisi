@@ -1,0 +1,50 @@
+
+.carlength_plug_contain {
+    display: none;
+    background: #fff;
+    border: 1px solid #e8ebef;
+    border-radius: 2px;
+    width: 398px;
+    padding-bottom: 20px;
+    color: #999;
+    position: absolute;
+    z-index: 999;
+}
+.close-btn {
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 48px;
+}
+.carlen-tips {
+    padding: 26px 0 0 20px;
+    text-align: left;
+}
+.carlen_ul {
+    padding: 6px 0 0 12px;
+}
+.carlen_ul li.car {
+    background: #FFF;
+    border: 1px solid #FF8E00;
+}
+.carlen_ul li.cur {
+    color: #fff;
+    background: #FF8E00;
+    border: 1px solid #FF8E00;
+}
+.carlen_ul li {
+    background: #e8ebef;
+    border-radius: 2px;
+    width: 66px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 42px;
+    font-size: 16px;
+    margin: 3px;
+    border: 1px solid #e8ebef;
+    cursor: pointer;
+}

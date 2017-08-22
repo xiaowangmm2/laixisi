@@ -1,0 +1,56 @@
+/*单行溢出*/
+
+.over-one-line {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*多行溢出*/
+
+.over-more-line (@line: 2) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+    overflow: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+    &:after {
+        content: " ";
+        display: block;
+        clear: both;
+        height: 0;
+    }
+}
+
+.index-common-title() {
+    .case-title {
+        height: 34px;
+        line-height: 34px;
+        .case-title-text {
+            float: left;
+            font-size: 24px;
+            color: rgb(43, 43, 43);
+            i {
+                font-style: normal;
+                font-size: 14px;
+                color: #666;
+                margin-left: 8px;
+            }
+        }
+        .case-title-more {
+            float: right;
+            width: 89px;
+            height: 32px;
+            border: 1px solid #eaeaea;
+            border-radius: 26px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    }
+}
+

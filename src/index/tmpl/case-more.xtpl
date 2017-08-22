@@ -1,0 +1,7 @@
+{{#each(caseMoreArr)}}
+<li>
+  <a href="javascript:void(0)" class="menu-link" target="_blank">
+      <span class="menu-img"><img src="{{img}}"  alt="杭州莱希斯" ></span>
+  </a>
+</li>
+{{/each}}

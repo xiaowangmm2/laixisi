@@ -1,0 +1,10 @@
+{{#each(newsArr)}}
+<li>
+    <a href="javascript:void">
+        <h2 class="new-item-date">{{data}}</h2>
+        <div class="news-item-year">{{year}}</div>
+        <div class="news-item-title">{{title}}</div>
+        <p class="news-item-info">{{content}}</p>
+    </a>
+</li>
+{{/each}}

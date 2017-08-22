@@ -1,0 +1,10 @@
+{{#each(caseArr)}}
+<li>
+    <span class="case-item-img"><img src="{{img}}"  alt="杭州莱希斯"></span>
+    <div class="case-item-main">
+        <h2>{{title}}</h2>
+        <p class="case-item-info">{{content}}</p>
+        <a href="/caseCate.html?type={{type}}" class="case-item-link">查看详细>></a>
+    </div>
+</li>
+{{/each}}
